@@ -1,7 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable react/prop-types */
 import React from 'react';
-import fullpageStyles from 'fullpage.js/dist/fullpage.min.css'; // eslint-disable-line no-unused-vars
+import fullpageStyles from 'fullpage.js/dist/jquery.fullpage.min.css'; // eslint-disable-line no-unused-vars
 
 import Logger from '../Logger';
 import {
@@ -46,7 +46,7 @@ class ReactFullpage extends React.Component {
     }
 
     this.log('Requiring fullpage.js');
-    Fullpage = require('fullpage.js/dist/fullpage.extensions.min');
+    Fullpage = require('fullpage.js/dist/jquery.fullpage.extensions.min');
 
     this.state = {
       initialized: false,
@@ -118,7 +118,7 @@ class ReactFullpage extends React.Component {
       require('fullpage.js/vendors/scrolloverflow.min');
     }
     if (easing) {
-      require('fullpage.js/vendors/easings.min');
+      require('fullpage.js/vendors/jquery.easings.min');
     }
   }
 
